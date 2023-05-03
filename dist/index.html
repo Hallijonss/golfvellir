@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="container mx-auto p-4">
+    <h2 class="text-2xl font-bold text-center mb-4">Golfvellir Íslands</h2>
+    <h3 class="text-l font-bold text-center mb-4">Verð miðast við 18 holur, ef upplýsingar reynast rangar má senda ábendingu á isak.arnarsson@gmail.com</h3>
+    <div class="flex justify-center space-x-4">
+      <button class="bg-white hover:bg-gray-100 text-black font-bold py-2 px-4 rounded shadow" onclick="showNearestGolfCourses()">Nálægustu golfvellirnir</button>
+      <button class="bg-white hover:bg-gray-100 text-black font-bold py-2 px-4 rounded shadow" onclick="showCheapestGolfCourses()">Ódýrustu Golfvellirnir</button>
+      <button class="bg-white hover:bg-gray-100 text-black font-bold py-2 px-4 rounded shadow" onclick="showCheapestDiscountGolfCourses()">Bestu tilboðin</button>
+    </div>
+    <div class="mt-4">
+      <div id="table-container"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    // Call the function for the default table to show on page load
+    showNearestGolfCourses();
+  </script>
+</body>
+</html>
